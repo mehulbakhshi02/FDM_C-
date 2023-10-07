@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <fstream>
 
 using namespace std;
 
@@ -55,6 +56,18 @@ public:
 	}
 };
 
+void write_csv(string filename, string firstcol, vector<double> firstval, string secondcol, vector<double> secondval){
+
+	ofstream myFile(filename);
+	
+	myFile << firstcol << "," << secondcol << endl;
+	for (int i =0; i < firstval.size(); ++i)
+	{
+		myFile << firstval[i] << "," << secondval[i] <<endl;
+	}
+	myFile.close();
+}
+
 int main() {
 	double n0=1.0;
 	double a=1.0;
@@ -79,4 +92,8 @@ int main() {
 	for (int i=0; i<error.size(); i++) {
 		cout << "E[" << i << "] = " << error[i] <<endl;
 	}
-} 
+	
+	write_csv("FDM.csv", "Analytical", dsolution, "Discrete", Dsolution);
+	
+	return 0;
+}
