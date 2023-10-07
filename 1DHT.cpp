@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <fstream>
 
 using namespace std;
 
@@ -36,6 +37,18 @@ public:
 	}
 };
 
+void write_csv(string filename, string col, vector<double> val){
+
+	ofstream myFile(filename);
+	
+	myFile << col << endl;
+	for (int i =0; i < val.size(); ++i)
+	{
+		myFile << val[i] <<endl;
+	}
+	myFile.close();
+}
+
 int main() {
 	double L=100;
 	double tb=100;
@@ -48,4 +61,6 @@ int main() {
 	for (int i=0; i<solution.size(); i++) {
 		cout << "T[" << i << "] = " << solution[i] <<endl;
 	}
+	
+	write_csv("1DHT.csv", "Temperature", solution);
 } 
