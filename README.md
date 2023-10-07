@@ -9,5 +9,5 @@ The code solves the ODE dn/dt=-an analytically and using Finite Difference Metho
 The code determines steady state temperature distribution in a fin as shown in below. 
 ![Screenshot from 2023-10-07 15-30-02](https://github.com/mehulbakhshi02/OOP_Practice/assets/85863039/1682f1d8-44ba-47e4-8cdf-7006092136f1)
 
-The code uses FDM with Drichelt and Neumann Boundary Conditions at the two ends.
-
+The code uses FDM with Drichelt and Neumann Boundary Conditions at the two ends. The below graph shows temperature distribution across the fin.
+![Screenshot from 2023-10-07 16-59-55](https://github.com/mehulbakhshi02/OOP_Practice/assets/85863039/56b2b8ff-698b-49e2-b8a8-d47715779c5a)
