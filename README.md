@@ -3,7 +3,7 @@ The repository contains codes that I wrote while practicing OOP. Following are t
 
 ## FDM.cpp
 The code solves the ODE dn/dt=-an analytically and using Finite Difference Method (central differencing). It also calculates the absolute error between the two. Following graph shows the values calculated by two methods.
-![Screenshot from 2023-10-07 16-40-58](https://github.com/mehulbakhshi02/OOP_Practice/assets/85863039/f3fec679-bf43-4d3a-be55-b561af196eae)
+![Screenshot from 2023-10-07 16-49-27](https://github.com/mehulbakhshi02/OOP_Practice/assets/85863039/97680539-32b0-4b31-b2b5-0bf9f6a1216c)
 
 ## 1DHT.cpp
 The code determines steady state temperature distribution in a fin as shown in below. 
