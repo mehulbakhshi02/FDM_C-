@@ -43,7 +43,7 @@ public:
 			}
 			
 			for (int i=0; i<asize; i++){
-				err1=abs(x_old[i]-inisol[i]);
+				err1=abs((x_old[i]-inisol[i])/inisol[i]);
 			}
 		}
 		}
