@@ -1,4 +1,4 @@
-# OOP_Practice
+# FDM_C++
 The repository contains codes that I wrote while practicing OOP. Following are the description along with some results of different files.
 
 ## FDM.cpp
